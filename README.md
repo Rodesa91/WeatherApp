@@ -1,6 +1,6 @@
 # 🌤️ WeatherApp
 
-A modern, feature-rich weather application built with SwiftUI that provides real-time weather information, hourly forecasts, and location-based weather data. This project demonstrates advanced iOS development practices, clean architecture, and comprehensive testing strategies.
+A modern, feature-rich weather application built with SwiftUI that provides real-time weather information, hourly forecasts, and location-based weather data. This project demonstrates advanced iOS development practices and clean architecture.
 
 
 ## 📱 Features
@@ -67,15 +67,8 @@ WeatherApp/
 │   ├── Utilities/            # Helper Classes
 │   │   ├── Constants.swift
 │   │   └── Extensions/
-│   └── Assets.xcassets/      # App Resources
-├── WeatherAppTests/          # Unit & Integration Tests
-│   ├── WeatherViewModelTests.swift
-│   ├── NetworkClientTests.swift
-│   ├── ModelTests.swift
-│   ├── IntegrationTests.swift
-│   └── WeatherAppTests.swift
-├── WeatherAppUITests/        # UI Tests
-    └── WeatherAppUITests.swift
+    └── Assets.xcassets/      # App Resources
+
 
 ```
 
@@ -110,32 +103,6 @@ WeatherApp/
    - Select your target device or simulator
    - Press `Cmd + R` to build and run
 
-### Running Tests
-
-```bash
-# Run all tests
-xcodebuild test -scheme WeatherApp -destination 'platform=iOS Simulator,name=iPhone 16'
-
-# Run specific test suite
-xcodebuild test -scheme WeatherApp -only-testing:WeatherAppTests
-
-# Run UI tests
-xcodebuild test -scheme WeatherApp -only-testing:WeatherAppUITests
-```
-
-## 🧪 Testing Strategy
-
-### Test Categories
-- **Unit Tests**: Individual component testing
-- **Integration Tests**: End-to-end workflow validation
-- **UI Tests**: Automated user interface testing
-- **Performance Tests**: Network and UI performance validation
-
-### Test Coverage
-- **ViewModel Logic**: 100% coverage of business logic
-- **Network Layer**: Complete API testing with error scenarios
-- **Data Models**: Validation and edge case testing
-- **User Flows**: Complete user journey testing
 
 ## 🎯 Key Features Implementation
 
